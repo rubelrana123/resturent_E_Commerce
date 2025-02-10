@@ -50,12 +50,12 @@
            </div>
  
            {/* Button & Extra Info */}
-           <div className="flex flex-col md:flex-row items-center md:justify-between mt-6 space-y-4 md:space-y-0">
-             <button className="btn text-white bg-[#F3274C] hover:bg-[#D9203B] px-6 py-3 rounded-md">
+           <div className="flex flex-col md:flex-row  justify-start  mt-6 space-y-4 md:space-y-0">
+             <button className="btn w-52 h-16 text-[17px] text-white bg-[#F3274C] hover:bg-[#D9203B] px-6 py-3  rounded-md">
                More About Us
              </button>
-             <div className="text-center md:text-left">
-               <h3 className="text-lg font-bold text-gray-800">Hello World</h3>
+             <div className="ml-4">
+               <h3 className="text-lg font-bold text-[#FFC222]">BRENDON GARREY</h3>
                <p className="text-gray-600">
                  CUSTOMER’S EXPERIENCE IS OUR HIGHEST PRIORITY.
                </p>
