@@ -5,7 +5,7 @@ import profileImage from "../../../assets/others/profile.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-base-100 shadow-md px-6">
+    <nav className="navbar fixed bg-black/50 z-100 text-black   shadow-md px-6">
       {/* Left Section (Logo) */}
       <div className="navbar-start">
         <div className="dropdown">
