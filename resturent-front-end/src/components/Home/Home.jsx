@@ -1,6 +1,7 @@
   
 import About from "../../Pages/Home/About/About";
 import Banner from "../../Pages/Home/Banner/Banner";
+import Instagram from "../../Pages/Home/Instagram/Instagram";
 import MeetOurExperts from "../../Pages/Home/MeetTeam/MeetTeam";
 import Category from "../../Pages/Home/Online/Category";
 import PopularProducts from "../../Pages/Home/PopularProducts/PopularProducts";
@@ -10,6 +11,7 @@ import PopularProducts from "../../Pages/Home/PopularProducts/PopularProducts";
 const Home = () => {
   return (
      <div>
+      <Instagram></Instagram>
       <Banner></Banner>
        <Category></Category>
       <PopularProducts></PopularProducts>
