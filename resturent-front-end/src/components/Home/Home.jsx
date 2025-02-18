@@ -5,6 +5,7 @@ import Instagram from "../../Pages/Home/Instagram/Instagram";
 import MeetOurExperts from "../../Pages/Home/MeetTeam/MeetTeam";
 import Category from "../../Pages/Home/Online/Category";
 import PopularProducts from "../../Pages/Home/PopularProducts/PopularProducts";
+import Testmonial from "../../Pages/Home/Testmonial/Testmonial";
  
  
 
@@ -17,6 +18,7 @@ const Home = () => {
       <PopularProducts></PopularProducts>
        <MeetOurExperts></MeetOurExperts>
        <About></About>
+      <Testmonial></Testmonial>
      </div>
   );
 };
