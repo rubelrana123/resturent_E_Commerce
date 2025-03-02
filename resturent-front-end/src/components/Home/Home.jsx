@@ -12,11 +12,11 @@ import Testmonial from "../../Pages/Home/Testmonial/Testmonial";
 const Home = () => {
   return (
      <div>
-      <Instagram></Instagram>
       <Banner></Banner>
        <Category></Category>
       <PopularProducts></PopularProducts>
        <MeetOurExperts></MeetOurExperts>
+      <Instagram></Instagram>
        <About></About>
       <Testmonial></Testmonial>
      </div>
