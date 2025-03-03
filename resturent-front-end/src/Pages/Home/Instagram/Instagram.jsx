@@ -3,7 +3,7 @@
 const Instagram = () => {
     return (
         <div>
-            Hello Instagram
+            Hello Instagram api hete
         </div>
     );
 };
