@@ -8,6 +8,7 @@ import foodImg5 from "../../../assets/popular/grilled-2.png";
 import foodImg6 from "../../../assets/popular/main-food.png";
 import foodImg7 from "../../../assets/popular/pasta-2.png";
 import PopularCard from "./PopularCard";
+import { useEffect, useState } from "react";
 const popularFoods = [
   { id: 1, name: "Delicious Burger", img: foodImg4, oldPrice: 60, discountPercentence: 25 },
   { id: 2, name: "Grilled Chicken", img: foodImg5, oldPrice: 42, discountPercentence: 7 },
@@ -21,7 +22,13 @@ const popularFoods = [
 
 const PopularProducts = () => {
 
-
+  const   [menu, setMenu] = useState([]);
+   useEffect(() => {
+    fetch(popularFoods).then( res => res.json())
+    .then( data => {
+      console.log("data", data)
+    }, [])
+   })
   return (
     <>
       <Subtitle heading="Crispy, Every Bite Tastes" subheading="Popular Fast Foods" />
