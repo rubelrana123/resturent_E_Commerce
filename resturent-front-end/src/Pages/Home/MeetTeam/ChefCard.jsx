@@ -10,11 +10,11 @@ export    const ChefCard = ( {chef} ) => {
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white shadow-md p-4 rounded-full text-center w-40 sm:w-44 md:w-48 lg:w-52">
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white shadow-md  py-3.5 rounded-[100%] text-center w-40 sm:w-44 md:w-48 lg:w-52">
           <p className="text-xs sm:text-sm md:text-base text-red-500 font-semibold">{chef?.role}</p>
           <h3 className="text-sm sm:text-lg md:text-xl font-bold text-gray-800">{chef?.name}</h3>
-          <div className="flex justify-center gap-2 mt-2">
-            <span className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-300 rounded-full"></span>
+          <div className="flex justify-center gap-2 mt-2 ">
+            <span className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-300 rounded-full "></span>
             <span className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-300 rounded-full"></span>
             <span className="w-2 h-2 sm:w-3 sm:h-3 bg-gray-300 rounded-full"></span>
           </div>
