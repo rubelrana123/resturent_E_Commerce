@@ -1,6 +1,8 @@
- import fastFood from "../../../assets/fastfood.jpg";
+ import { Children } from "react";
+import fastFood from "../../../assets/fastfood.jpg";
  import qualityLogo from "../../../assets/icon/qualityIcon.png";
  import reputeLogo from "../../../assets/icon/reputaioonIcon.png";
+import Button from "../../../components/Reuseable/Button/Button";
  const About = () => {
    return (
      <section className="bg-base-200 min-h-screen flex items-center">
@@ -51,9 +53,7 @@
  
            {/* Button & Extra Info */}
            <div className="flex flex-col md:flex-row  justify-start  mt-6 space-y-4 md:space-y-0">
-             <button className="btn w-52 h-16 text-[17px] text-white bg-[#F3274C] hover:bg-[#D9203B] px-6 py-3  rounded-md">
-               More About Us
-             </button>
+             <Button text="More About Us"></Button>
              <div className="ml-4">
                <h3 className="text-lg font-bold text-[#FFC222]">BRENDON GARREY</h3>
                <p className="text-gray-600">
