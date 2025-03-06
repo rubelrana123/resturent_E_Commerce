@@ -4,7 +4,7 @@ import SectionBanner from "../../components/Reuseable/SectionBanner/SectionBanne
 const OurShop = () => {
     return (
         <div>
-            <SectionBanner title = "Our Shop"  subTitle = "lets start your favourite" bannerImage = {bannerImage} ></SectionBanner>
+            <SectionBanner title = "Our Shop"  subtitle = "lets start your favourite" bannerImage = {bannerImage} ></SectionBanner>
         </div>
     );
 };
