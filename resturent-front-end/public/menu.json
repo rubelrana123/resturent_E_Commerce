@@ -17,25 +17,25 @@
     },
     {
         "_id": "642c155b2c4774f05c36ee7c",
-        "name": "Escalope de Veau",
+        "name": "Ruti With Beef Slice",
         "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
-        "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-5-370x247.jpg",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/beef-ruti.png",
         "category": "popular",
         "price": 14.5
     },
     {
         "_id": "642c155b2c4774f05c36ee88",
-        "name": "Escalope de Veau",
+        "name": "Fast Food Combo",
         "recipe": "Pan roasted haddock fillet wrapped in smoked French bacon with pea purée and tomato and chive vinaigrette",
-        "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-2-370x247.jpg",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/burger-2-1.png",
         "category": "dessert",
         "price": 12.5
     },
     {
         "_id": "642c155b2c4774f05c36ee7a",
-        "name": "Roast Duck Breast",
+        "name": "Delicious Burger",
         "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
-        "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-5-370x247.jpg",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/burger-2-1.png",
         "category": "popular",
         "price": 14.5
     },
@@ -153,17 +153,18 @@
     },
     {
         "_id": "642c155b2c4774f05c36ee7f",
-        "name": "Roasted Pork Belly",
+        "name": "Grilled Chicken",
         "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
-        "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-2-370x247.jpg",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/grilled-2.png",
+ 
         "category": "popular",
         "price": 14.5
     },
     {
         "_id": "642c155b2c4774f05c36eea8",
-        "name": "Chicken and Walnut Salad",
+        "name": "Fast Food Combo",
         "recipe": "Pan roasted pork belly with gratin potato, braised Savoy cabbage, apples, thyme and calvados jus",
-        "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-3-370x247.jpg",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/main-food.png",
         "category": "salad",
         "price": 13.5
     },
@@ -265,9 +266,41 @@
     },
     {
         "_id": "642c155b2c4774f05c36ee7e",
-        "name": "Fish Parmentier",
+        "name": "Chinese Pasta",
         "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
-        "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-5-370x247.jpg",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/pasta-2.png",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7d",
+        "name": "Chicago Deep Pizza",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/pizza-3.png",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7c",
+        "name": "Role Ruti",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/ruti.png.png",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7w",
+        "name": "Chicken Chop",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/delicious-burger.png",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7x",
+        "name": "Special Combo",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "https://raw.githubusercontent.com/rubelrana123/resturent_E_Commerce/refs/heads/main/resturent-front-end/src/assets/popular/main-food.png",
         "category": "popular",
         "price": 14.5
     },

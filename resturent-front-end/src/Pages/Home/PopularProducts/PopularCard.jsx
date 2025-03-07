@@ -1,8 +1,9 @@
-import React from 'react';
+ 
 
  const PopularCard = ({ item }) => {
-  const discountedPrice = (item?.oldPrice - (item?.discountPercentence / 100) * item?.oldPrice).toFixed(2);
-  
+  // console.log("item", item)
+   let discountPercentence = 5;
+  const discountedPrice = (item?.price - (item?.discountPercentence / 100) * item?.price).toFixed(2);
   return (
     <div className="relative group">
       <div className="bg-white rounded-lg p-4 shadow-md transition-all duration-300 hover:shadow-xl">
@@ -16,7 +17,7 @@ import React from 'react';
         {/* Image Container */}
         <div className="w-full h-48 mb-4">
           <img 
-            src={item?.img} 
+            src={item?.image} 
             alt={item?.name} 
             className="w-full h-full object-cover rounded-lg"
           />
@@ -29,9 +30,10 @@ import React from 'react';
               -{item?.discountPercentence}%
             </span>
             <span className="text-gray-400 text-sm line-through">
-              ${item?.oldPrice.toFixed(2)}
+              ${item?.price.toFixed(2)} 
             </span>
             <span className="text-red-500 font-bold">
+              100
               ${discountedPrice}
             </span>
           </div>
