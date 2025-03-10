@@ -11,6 +11,12 @@ const Menu = () => {
       </Helmet>
     <SectionBanner title = "Our Menu" subtitle="would you like to try a menu" bannerImage={bannerImage}></SectionBanner>
     <PopularProducts></PopularProducts>
+    <SectionBanner title = "Our Menu" subtitle="would you like to try a menu" bannerImage={bannerImage}></SectionBanner>
+    <PopularProducts></PopularProducts>
+    <SectionBanner title = "Our Menu" subtitle="would you like to try a menu" bannerImage={bannerImage}></SectionBanner>
+    <PopularProducts></PopularProducts>
+    <SectionBanner title = "Our Menu" subtitle="would you like to try a menu" bannerImage={bannerImage}></SectionBanner>
+    <PopularProducts></PopularProducts>
     </div>
   );
 };
