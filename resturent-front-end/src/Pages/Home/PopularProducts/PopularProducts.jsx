@@ -9,6 +9,7 @@ import foodImg6 from "../../../assets/popular/main-food.png";
 import foodImg7 from "../../../assets/popular/pasta-2.png";
 import PopularCard from "./PopularCard";
 import { useEffect, useState } from "react";
+import UseMenu from "../../../hooks/Usemenu";
 // const popularFoods = [
 //   {
 //     id: 1,
@@ -69,21 +70,10 @@ import { useEffect, useState } from "react";
 // ];
 
 const PopularProducts = () => {
-     const [menu, setMenu] = useState([]);
-    // const [loading, setLoading] = useState(true);
-
-    // console.log('../../../../public/menu.json')
-    useEffect(() => {
-        fetch('../../../../public/menu.json')
-            .then(res => res.json())
-            .then(data => {
-              console.log("data",data.category)
-                setMenu(data);
-                // setLoading(false);
-            });
-    }, [])
- 
-    // console.log("popular menu ",  menu)
+const [menu ] = UseMenu()
+    const popular = menu.filter(item => {
+      return item?.category === "popular";
+    })
   return (
     <>
       <Subtitle
@@ -93,9 +83,9 @@ const PopularProducts = () => {
 
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {menu
-  .filter((item) => item?.category === "popular") // Filter items first
-  .map((item) => (
+        {popular
+  
+       .map((item) => (
     <PopularCard key={item._id} item={item} />
   ))}
 
