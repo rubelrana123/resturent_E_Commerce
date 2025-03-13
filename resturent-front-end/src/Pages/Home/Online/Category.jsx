@@ -27,7 +27,7 @@ const Category = () => {
         spaceBetween={30}
         centeredSlides={true}
         loop={true} // ✅ Makes it infinite
-        speed={4000} // ✅ Slow and smooth transition (adjust as needed)
+        speed={5000} // ✅ Slow and smooth transition (adjust as needed)
         autoplay={{
           delay: 200, // ✅ No delay, continuous movement
           disableOnInteraction: false, // ✅ Keep autoplay after interaction
