@@ -32,7 +32,7 @@ const Category = () => {
           delay: 200, // ✅ No delay, continuous movement
           disableOnInteraction: false, // ✅ Keep autoplay after interaction
         }}
-        freeMode={true} // ✅ Removes snapping for smooth movement
+        freeMode={false} // ✅ Removes snapping for smooth movement
         modules={[Pagination, Autoplay]}
         className="mySwiper mb-24"
       >
