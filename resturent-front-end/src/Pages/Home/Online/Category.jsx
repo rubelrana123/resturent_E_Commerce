@@ -29,8 +29,8 @@ const Category = () => {
         loop={true} // ✅ Makes it infinite
         speed={5000} // ✅ Slow and smooth transition (adjust as needed)
         autoplay={{
-          delay: 200, // ✅ No delay, continuous movement
-          disableOnInteraction: false, // ✅ Keep autoplay after interaction
+          delay: 200, //  
+          disableOnInteraction: false, 
         }}
         freeMode={false} // ✅ Removes snapping for smooth movement
         modules={[Pagination, Autoplay]}
