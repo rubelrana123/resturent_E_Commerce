@@ -14,7 +14,7 @@ import Subtitle from "../../../components/Reuseable/Subtitle/Subtitle";
 
 const Testomonial = () => {
   return (
-    <div className="py-5">
+    <div className="py-10">
       <Subtitle
         heading={"---What Our Clients Say---"}
         subheading={"TESTIMONIALS"}
