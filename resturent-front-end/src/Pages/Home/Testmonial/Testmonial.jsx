@@ -68,7 +68,7 @@ const Testomonial = () => {
                 by the readable content of a page when looking at its layout.
               </p>
               <h1 className="text-3xl font-semibold text-[#CD9003] py-2">
-                JANE DOE
+                JANE Done
               </h1>
             </div>
           </SwiperSlide>
