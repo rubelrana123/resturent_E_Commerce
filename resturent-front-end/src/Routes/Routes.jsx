@@ -13,6 +13,7 @@ import Menu from "../Pages/Menu/Menu/Menu";
     {
       path: "/",
       element: <Main></Main>,
+      //children route
       children: [
         {
             path: '/',
