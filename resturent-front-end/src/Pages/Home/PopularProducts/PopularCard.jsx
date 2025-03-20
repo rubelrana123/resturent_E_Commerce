@@ -1,10 +1,11 @@
-const PopularCard = ({ item }) => {
+const PopularCard = ({ item, menuOrder }) => {
   // console.log("item", item)
-  let discountPercentence = 5;
-  const discountedPrice = (
-    item?.price -
-    (item?.discountPercentence / 100) * item?.price
-  ).toFixed(2);
+  // let discountPercentence = 5;
+  // const discountedPrice = (
+  //   item?.price -
+  //   (item?.discountPercentence / 100) * item?.price
+  // )?.toFixed(2);
+  console.log(item, "card item");
   return (
     <div className="relative group">
       <div className="bg-white rounded-lg p-4 shadow-md transition-all duration-300 hover:shadow-xl">
@@ -37,16 +38,27 @@ const PopularCard = ({ item }) => {
         <div className="space-y-2">
           <div className="flex items-center gap-2">
             <span className="bg-yellow-400 text-xs font-bold px-2 py-1 rounded">
-              -{item?.discountPercentence}%
+              {/* -{item?.discountPercentence}% */}
             </span>
             <span className="text-gray-400 text-sm line-through">
-              ${item?.price.toFixed(2)}
+              {/* ${item?.price?.toFixed(2)} */}
+              {menuOrder ? 50 : 100}
             </span>
             <span className="text-red-500 font-bold">
-              100 ${discountedPrice}
+              100
+              {/* 100 ${discountedPrice} */}
             </span>
           </div>
           <h3 className="font-bold text-lg">{item?.name}</h3>
+          {
+            menuOrder &&
+              <p className="text-gray-400 text-sm">
+             
+                {item?.recipe
+                }
+              </p>
+            
+          }
         </div>
       </div>
     </div>

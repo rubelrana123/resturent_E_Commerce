@@ -2,35 +2,35 @@ import { Helmet } from "react-helmet-async";
 import UseMenu from "../../../hooks/Usemenu";
 import PopularProducts from "../../Home/PopularProducts/PopularProducts";
 import SectionBanner from "../../../components/Reuseable/SectionBanner/SectionBanner";
-import bannerImage from "../../../assets/shop/banner2.jpg"
+import bannerImage from "../../../assets/shop/banner2.jpg";
 import MenuItem from "../../../components/Reuseable/MenuItem/MenuItem";
 import MenuCategory from "../MenuCategory/MenuCategory";
- 
- 
-const Menu = () => {
+import PopularCard from "../../Home/PopularProducts/PopularCard";
 
+const Menu = () => {
   const [menu] = UseMenu();
-    const desserts = menu.filter(item => item.category === 'dessert');
-    const soup = menu.filter(item => item.category === 'soup');
-    const salad = menu.filter(item => item.category === 'salad');
-    const pizza = menu.filter(item => item.category === 'pizza');
-    const offered = menu.filter(item => item.category === 'offered');
-  
+  const desserts = menu.filter((item) => item.category === "dessert");
+  const soup = menu.filter((item) => item.category === "soup");
+  const salad = menu.filter((item) => item.category === "salad");
+  const pizza = menu.filter((item) => item.category === "pizza");
+  const offered = menu.filter((item) => item.category === "offered");
+
   return (
     <div>
       <Helmet>
         <title>Bistro Boss | Menu</title>
       </Helmet>
-    <SectionBanner title = "Our Menu" subtitle="would you like to try a menu" bannerImage={bannerImage}></SectionBanner>
-    <PopularProducts item = {desserts}></PopularProducts>
-    <MenuCategory items={desserts} title="Desserts" img={bannerImage}></MenuCategory>
-  
-     {/* <MenuItem item = {desserts}></MenuItem> */}
-    {/* <SectionBanner title = "Our Menu" subtitle="would you like to try a menu" bannerImage={bannerImage}></SectionBanner>
-    <SectionBanner title = "Our Menu" subtitle="would you like to try a menu" bannerImage={bannerImage}></SectionBanner>
-    <PopularProducts></PopularProducts>
-    <SectionBanner title = "Our Menu" subtitle="would you like to try a menu" bannerImage={bannerImage}></SectionBanner>
-    <PopularProducts></PopularProducts> */}
+      <SectionBanner
+        title="Our Menu"
+        subtitle="would you like to try a menu"
+        bannerImage={bannerImage}
+      ></SectionBanner>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {desserts.map((item, idx) => (
+          <PopularCard menuOrder={true} key={idx} item={item} />
+        ))}
+      </div>
+      {/* <MenuCategory items={desserts} title="Desserts" img={bannerImage}></MenuCategory> */}
     </div>
   );
 };
