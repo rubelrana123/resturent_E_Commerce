@@ -7,6 +7,8 @@ import Home from "../components/Home/Home";
 import OurShop from "../Pages/OurShop/OurShop";
 import Login from "../Pages/Login/Login";
 import Menu from "../Pages/Menu/Menu/Menu";
+import Signout from "../Pages/SignIn/Signin";
+import Signin from "../Pages/SignIn/Signin";
  
 
   export const router = createBrowserRouter([
@@ -29,6 +31,12 @@ import Menu from "../Pages/Menu/Menu/Menu";
           element : <OurShop></OurShop>,
     
         },
+        {
+          path : "signout",
+          element : <Signin></Signin>,
+    
+        },
+
         {
           path : "login",
           element : <Login></Login>,

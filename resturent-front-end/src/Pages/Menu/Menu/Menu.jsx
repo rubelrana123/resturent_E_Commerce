@@ -20,6 +20,7 @@ const Menu = () => {
       <Helmet>
         <title>Bistro Boss | Menu</title>
       </Helmet>
+      {/* our menu  */}
       <SectionBanner
         title="Our Menu"
         subtitle="would you like to try a menu"
@@ -30,6 +31,48 @@ const Menu = () => {
           <PopularCard menuOrder={true} key={idx} item={item} />
         ))}
       </div>
+      <SectionBanner
+        title="Our Menu"
+        subtitle="would you like to try a menu"
+        bannerImage={bannerImage}
+      ></SectionBanner>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {soup.map((item, idx) => (
+          <PopularCard menuOrder={true} key={idx} item={item} />
+        ))}
+      </div>
+      <SectionBanner
+        title="Our Menu"
+        subtitle="would you like to try a menu"
+        bannerImage={bannerImage}
+      ></SectionBanner>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {salad.map((item, idx) => (
+          <PopularCard menuOrder={true} key={idx} item={item} />
+        ))}
+      </div>
+      <SectionBanner
+        title="Our Menu"
+        subtitle="would you like to try a menu"
+        bannerImage={bannerImage}
+      ></SectionBanner>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {offered.map((item, idx) => (
+          <PopularCard menuOrder={true} key={idx} item={item} />
+        ))}
+      </div>
+      <SectionBanner
+        title="Our Menu"
+        subtitle="would you like to try a menu"
+        bannerImage={bannerImage}
+      ></SectionBanner>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {pizza.map((item, idx) => (
+          <PopularCard menuOrder={true} key={idx} item={item} />
+        ))}
+      </div>
+      {/* // */}
+
       {/* <MenuCategory items={desserts} title="Desserts" img={bannerImage}></MenuCategory> */}
     </div>
   );
