@@ -28,7 +28,7 @@ const Shop = () => {
             <SectionBanner title = "Our Shop"  subtitle = "lets start your favourite" bannerImage = {bannerImage} ></SectionBanner>
              <Subtitle heading ="our shop" subheading = "hello shop"></Subtitle>
              <div>
-                <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+             <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                     <TabList className="flex justify-center py-3 flex-wrap gap-2">
                     <Tab>Salad</Tab>
                     <Tab>pizza</Tab>
@@ -37,7 +37,7 @@ const Shop = () => {
                     <Tab>drinks</Tab>
                     </TabList>
 
-                <TabPanel>
+                <TabPanel  >
                  <ShopTabs items={salad}></ShopTabs>
                 </TabPanel>
                 <TabPanel>

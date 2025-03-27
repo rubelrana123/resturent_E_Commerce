@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const PopularCard = ({ item, menuOrder }) => {
   // console.log("item", item)
   // let discountPercentence = 5;
@@ -61,6 +63,14 @@ const PopularCard = ({ item, menuOrder }) => {
           }
         </div>
       </div>
+      {/* {
+        menuOrder &&
+        <Link to={`/order/${title}`}>
+               <button className="btn btn-outline border-0 border-b-4 mt-4">
+                 Order Now
+               </button>
+             </Link>
+      } */}
     </div>
   );
 };

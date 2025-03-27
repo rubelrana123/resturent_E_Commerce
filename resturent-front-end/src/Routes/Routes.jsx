@@ -28,7 +28,7 @@ import Shop from "../Pages/OurShop/Shop/Shop";
     
         },
         {
-          path : "shop",
+          path : "shop/:category",
           element : <Shop></Shop>,
     
         },
