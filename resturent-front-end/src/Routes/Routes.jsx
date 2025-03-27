@@ -4,11 +4,12 @@ import {
 import Main from "../Layout/Main";
 import Home from "../components/Home/Home";
  
-import OurShop from "../Pages/OurShop/OurShop";
+ 
 import Login from "../Pages/Login/Login";
 import Menu from "../Pages/Menu/Menu/Menu";
 import Signout from "../Pages/SignIn/Signin";
 import Signin from "../Pages/SignIn/Signin";
+import Shop from "../Pages/OurShop/Shop/Shop";
  
 
   export const router = createBrowserRouter([
@@ -28,20 +29,20 @@ import Signin from "../Pages/SignIn/Signin";
         },
         {
           path : "shop",
-          element : <OurShop></OurShop>,
+          element : <Shop></Shop>,
     
         },
-        {
-          path : "signout",
-          element : <Signin></Signin>,
+        // {
+        //   path : "signout",
+        //   element : <Signin></Signin>,
     
-        },
+        // },
 
-        {
-          path : "login",
-          element : <Login></Login>,
+        // {
+        //   path : "login",
+        //   element : <Login></Login>,
     
-        }
+        // }
       ]
     },
   ]);

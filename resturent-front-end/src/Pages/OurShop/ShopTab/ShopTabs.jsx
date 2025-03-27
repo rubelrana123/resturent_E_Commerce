@@ -1,10 +1,10 @@
-import FoodCard from '../../../components/FoodCard/FoodCard';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination } from "swiper/modules"; // ✅ Correct import for Swiper v8+
 import "swiper/css";
 import "swiper/css/pagination";
+import FoodCard from "../../../components/Reuseable/FoodCard/FoodCard";
 
-const OrderTab = ({ items }) => {
+const ShopTabs = ({ items }) => {
     const pagination = {
         clickable: true,
         renderBullet: function (index, className) {
@@ -14,26 +14,27 @@ const OrderTab = ({ items }) => {
     return (
         <div >
 
-            <Swiper
-                pagination={pagination}
-                modules={[Pagination]}
-                className="mySwiper"
-            >
-                <SwiperSlide>
-                    <div className='grid md:grid-cols-3 gap-10'>
-                        {
-                            items.map(item => <FoodCard
-                                key={item._id}
-                                item={item}
-                            ></FoodCard>)
-                        }
-                    </div>
+        <Swiper
+            pagination={pagination}
+            modules={[Pagination]}
+            className="mySwiper"
+        >
+            <SwiperSlide>
+                <div className='grid md:grid-cols-3 gap-10'>
+                    {
+                        items.map(item => <FoodCard
+                            key={item._id}
+                            item={item}
+                        ></FoodCard>)
+                    }
+                </div>
 
-                </SwiperSlide>
+            </SwiperSlide>
 
-            </Swiper>
-        </div>
+        </Swiper>
+    </div>
+
     );
 };
 
-export default OrderTab;
+export default ShopTabs;
